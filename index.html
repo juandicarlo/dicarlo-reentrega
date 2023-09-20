@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <title>Supermercado "La vuelta" </title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-header">Supermercado "La vuelta"</h1>
+    </header>
+    <div class="filtro-container">
+        <input type="text" id="filtroNombre" placeholder="Buscar por nombre">
+        <button id="btnFiltrar">Filtrar</button>
+    </div>
+    <div class="contenedor-botones">
+        <button id="ordenarMayor">Ordenar por Mayor Precio</button>
+        <button id="ordenarMenor">Ordenar por Menor Precio</button>
+    </div>
+    <div class="contenedor">
+        <div class="contenedor-items">
+        <div class="fila">
+          <!-- Aquí van los primeros 5 productos -->
+        </div>
+        <div class="fila">
+          <!-- Aquí van los siguientes 5 productos -->
+        </div>
+        <!-- Repite esto para todas las filas de productos -->
+      </div>
+    </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+               
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script> 
+    <script src="style.css"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.js"></script>
+</body>
+</html>
