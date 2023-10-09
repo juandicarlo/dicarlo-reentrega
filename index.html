@@ -17,22 +17,16 @@
         <input type="text" id="filtroNombre" placeholder="Buscar por nombre">
         <button id="btnFiltrar">Filtrar</button>
     </div>
-    <div class="contenedor-botones">
-        <button id="ordenarMayor">Ordenar por Mayor Precio</button>
-        <button id="ordenarMenor">Ordenar por Menor Precio</button>
-    </div>
+    <label for="ordenarPor">Ordenar por:</label>
+<select id="ordenarPor">
+  <option value="nombre">Nombre</option>
+  <option value="precioAsc">Precio (menor a mayor)</option>
+  <option value="precioDesc">Precio (mayor a menor)</option>
+</select>
     <div class="contenedor">
-        <div class="contenedor-items">
-        <div class="fila">
-          <!-- Aquí van los primeros 5 productos -->
+        <div class="contenedor-items" id="contenedor-items">
         </div>
-        <div class="fila">
-          <!-- Aquí van los siguientes 5 productos -->
-        </div>
-        <!-- Repite esto para todas las filas de productos -->
-      </div>
     </div>
-        <!-- Carrito de Compras -->
         <div class="carrito" id="carrito">
             <div class="header-carrito">
                 <h2>Tu Carrito</h2>
@@ -49,11 +43,11 @@
                     </span>
                 </div>
                 <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                <button id="vaciarCarrito">Vaciar Carrito</button>
             </div>
         </div>
     </section>
     <script src="app.js"></script> 
-    <script src="style.css"></script>  
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="sweetalert2.js"></script>
 </body>
